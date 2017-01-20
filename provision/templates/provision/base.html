@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wrench - {% block title %}Base{% endblock %}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'provision/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'provision/main.css' %}">
+    <script src="{% static 'provision/jquery-1.12.1.min.js' %}"></script>
+    <script src="{% static 'provision/bootstrap.min.js' %}"></script>
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'provision/base.html' %}
+{% block title %}Index{% endblock %}
+{% block body %}
+<h1>This is provision</h1>
+    <ul>
+    {% for box in box_list %}
+        <li>{{ box.box_name  }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
